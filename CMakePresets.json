@@ -1,0 +1,22 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 22,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "default",
+            "displayName": "Default Config",
+            "description": "Cross compile for raspberry-pi using Make",
+            "toolchainFile": "${sourceDir}/cmake/raspi_toolchain.cmake",
+            "generator": "Unix Makefiles",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_VERBOSE_MAKEFILE": "OFF"
+            }
+        }
+    ]
+}

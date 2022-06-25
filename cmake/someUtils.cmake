@@ -1,0 +1,5 @@
+function(print_list theList)
+  foreach(item ${theList})
+     message("${item}") 
+  endforeach(item ${theList})
+endfunction()
