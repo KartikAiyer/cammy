@@ -1,3 +1,3 @@
 {
-    "cmake.cmakePath": "/home/kartik/Projects/hello_raspicam/toolchain/host_utils/bin/cmake"
+    "cmake.cmakePath": "${workspaceFolder}/toolchain/host_utils/bin/cmake"
 }
