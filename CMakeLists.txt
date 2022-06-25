@@ -14,4 +14,8 @@ include(Conan)
 
 run_conan()
 
+find_package(spdlog REQUIRED)
+
 add_executable(hello_world main.cpp)
+target_link_libraries(hello_world PRIVATE ${LIBCAMERA_LINK_LIBRARIES} spdlog::spdlog)
+target_include_directories(hello_world PRIVATE ${LIBCAMERA_INCLUDE_DIRS})
